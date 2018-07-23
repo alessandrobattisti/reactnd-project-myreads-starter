@@ -13,7 +13,7 @@ class Book extends React.Component{
   }
 
   change = (event) => {
-    console.log(event.target.value)
+    //console.log(event.target.value)
     this.props.change(this.book, event.target.value)
   }
 

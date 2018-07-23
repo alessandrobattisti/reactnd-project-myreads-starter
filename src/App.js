@@ -62,10 +62,10 @@ class BooksApp extends React.Component {
 
   //this is the real api call function
   realApiCall(e){
-    console.log(e, this.timeout)
+    //console.log(e, this.timeout)
     //search the API only if the query term is at least one char
     if(e.length > 0){
-      console.log(e)
+      //console.log(e)
       BooksAPI.search(e)
         .then(
           res => { this.setState(
@@ -98,7 +98,7 @@ class BooksApp extends React.Component {
               }
               //if search returned no results add empty array
               else{
-                console.log(res);
+                //console.log(res);
                 return {query_finished: true, search_results: []}
               }
             }
